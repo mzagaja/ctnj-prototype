@@ -1,0 +1,224 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    line-height: 1.4
+}
+
+* {
+    box-sizing: border-box
+}
+
+#bs {
+    overflow: hidden;
+    position: relative
+}
+
+.background {
+    background: 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.background-stretch {
+    background-size: 100% 100%
+}
+
+.background-crop {
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.background-mask {
+    background-repeat: no-repeat;
+    background-size: auto auto
+}
+
+.background-aspect {
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain
+}
+
+.background-tile {
+    background-repeat: repeat
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: none
+}
+
+.slide>.slide-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none
+}
+
+.slide.buildin>.slide-hover,
+.slide.buildout>.slide-hover {
+    display: block
+}
+
+.element {
+    position: absolute
+}
+
+.element .text {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: normal;
+    word-wrap: break-word;
+    line-height: 1.4
+}
+
+.element .shape {
+    width: 100%;
+    height: 100%
+}
+
+.element .shape.circle {
+    border-radius: 50%
+}
+
+.element .embed {
+    overflow: hidden;
+    width: 100%;
+    height: 100%
+}
+
+.element .menu {
+    overflow: hidden;
+    white-space: nowrap;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-content: center;
+    align-content: center
+}
+
+.element .menu label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    -ms-flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+.element .menu label span {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap
+}
+
+.element .menu.ie9 {
+    display: table;
+    table-layout: auto
+}
+
+.element .menu.ie9 label {
+    display: table-cell;
+    padding: 0 5px
+}
+
+.ad-btn {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none
+}
+
+.ad-btn label {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    white-space: pre-wrap
+}
+
+.ad-btn.no-hand-cursor label {
+    cursor: default
+}
+
+.ad-image {
+    height: 100%;
+    width: 100%
+}
+
+.ad-clipart {
+    height: 100%;
+    width: 100%;
+    position: relative
+}
+
+.ad-clipart svg {
+    position: absolute
+}
+
+.image-stretch {
+    background-size: 100% 100%
+}
+
+.image-crop {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat
+}
+
+.image-mask {
+    background-size: auto auto;
+    background-repeat: no-repeat
+}
+
+.image-aspect {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat
+}
+
+.image-tile {
+    background-repeat: repeat
+}
