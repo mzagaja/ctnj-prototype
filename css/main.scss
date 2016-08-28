@@ -1,53 +1,94 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
+@import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Lora';
 
+$ctnj-orange: #ff9300;
+$ctnj-blue: #333399;
+$ctnj-gray: #666666;
+$font-family-serif: 'Lora', serif;
 
+.header {
+  background-color: $ctnj-orange;
+  color: white;
+}
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+.menu {
+  background-color: $ctnj-gray;
+  color: white;
+}
 
-$spacing-unit:     30px;
+.opinion, .sponsored-messages {
+  text-align: center;
+  padding: 0;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+  h1 {
+    background-color: $ctnj-blue;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 0.25em;
+    margin: 0.25em 0;
+  }
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+  h2 {
+    font-family: $font-family-serif;
+    margin-top: 0.5em;
+  }
 
-// Width of the content area
-$content-width:    800px;
+  h3 {
+    padding: 0.5em 0;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 1.2em;
+  }
+}
 
-$on-palm:          600px;
-$on-laptop:        800px;
+.btn-default {
+  background-color: $ctnj-blue;
+  border-color: $ctnj-blue;
+  color: white;
+}
 
+.social {
+  text-align: right;
+  margin: 2em 0;
+}
 
+.form-inline .form-control {
+    width:auto;
+}
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+.form-inline .form-group {
+    display: inline-block;
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.article-image {
+  position: relative;
+  width: 100%;
+  margin-top: 0.35em;
+  margin-bottom: 1em;
+}
+
+.article-headline {
+    top:0;
+    left:0;
+    position: absolute;
+    background-color: $ctnj-blue;
+    color: white;
+    opacity: 0.75;
+    a:link, a:visited {
+      color: white;
     }
 }
 
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+p {
+  font-family: $font-family-serif;
+}

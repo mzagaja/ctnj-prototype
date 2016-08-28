@@ -1,1 +1,0 @@
-bsStats_bcmet6v63({"code":20,"premium":1,"terminal":"bannersnack","permit":1});
