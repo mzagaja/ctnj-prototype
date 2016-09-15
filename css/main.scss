@@ -2,12 +2,20 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import "bootstrap";
-@import 'https://fonts.googleapis.com/css?family=Lora';
 
 $ctnj-orange: #ff9300;
 $ctnj-blue: #333399;
 $ctnj-gray: #666666;
-$font-family-serif: 'Lora', serif;
+$ctnj-headline-color: #37469b;
+$ctnj-background-blue: #cccce0;
+
+h1, h2, h3, h4, h5, h6 {
+  color: $ctnj-headline-color;
+}
+
+h1 {
+  text-align: center;
+}
 
 .header {
   background-color: $ctnj-orange;
@@ -19,36 +27,21 @@ $font-family-serif: 'Lora', serif;
   color: white;
 }
 
-.opinion, .sponsored-messages {
-  text-align: center;
-  padding: 0;
-
-  h1 {
-    background-color: $ctnj-blue;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    padding: 0.25em;
-    margin: 0.25em 0;
-  }
-
-  h2 {
-    font-family: $font-family-serif;
-    margin-top: 0.5em;
-  }
-
-  h3 {
-    padding: 0.5em 0;
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 1.2em;
-  }
-}
-
 .btn-default {
   background-color: $ctnj-gray;
   border-color: $ctnj-gray;
   color: white;
+
+  a {
+    color: white;
+  }
+  a:hover {
+    background-color: $ctnj-orange;
+  }
+}
+
+.btn-default:hover {
+  background-color: $ctnj-orange;
 }
 
 .social {
@@ -64,31 +57,18 @@ $font-family-serif: 'Lora', serif;
     display: inline-block;
 }
 
-.img-center {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
 }
 
-.article-image {
-  position: relative;
-  width: 100%;
-  margin-top: 0.35em;
-  margin-bottom: 1em;
-}
-
-.article-headline {
-    top:0;
-    left:0;
+.video-container iframe {
     position: absolute;
-    background-color: $ctnj-blue;
-    color: white;
-    opacity: 0.75;
-    a:link, a:visited {
-      color: white;
-    }
-}
-
-p {
-  font-family: $font-family-serif;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
